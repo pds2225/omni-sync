@@ -1,0 +1,57 @@
+{
+  "log": [
+    {
+      "time": "12:42:49",
+      "stage": "data_merge",
+      "result": "company=밸류업파트너스, project=수출지원 공고 추천 정확도 향상을 위..."
+    },
+    {
+      "time": "12:42:49",
+      "stage": "WriterAgent",
+      "result": "filled=0[], skipped=1['solution'], bulleted=10['problem', 'market_status', 'bm_intro', 'differentiator', 'expected_effect', 'alliance_plan', 'pr_plan', 'future_plan', 'output_plan', 'output_effect']"
+    },
+    {
+      "time": "12:42:49",
+      "stage": "TableAgent",
+      "result": "processed=['budget', 'schedule', 'team', 'hire_plan'], warnings=0, errors=0"
+    },
+    {
+      "time": "12:42:49",
+      "stage": "AssetAgent",
+      "result": "images_ready=3, warnings=0, errors=0"
+    },
+    {
+      "time": "12:42:49",
+      "stage": "RenderAgent",
+      "result": {
+        "cells_written": 80,
+        "sections_written": 14,
+        "images_inserted": 3,
+        "images_placeholder": 0,
+        "tables_inserted": 1,
+        "blank_tables_inserted": 0,
+        "tables_deleted": 20,
+        "paras_deleted": 18,
+        "blue_rows_deleted": 2,
+        "blank_removed": 118,
+        "empty_rows_removed": 2,
+        "errors": [],
+        "output": "output/사업계획서_완성.docx",
+        "dry_run": false,
+        "title_bolded": 24
+      }
+    },
+    {
+      "time": "12:42:49",
+      "stage": "QAAgent",
+      "result": "errors=0, warnings=0"
+    }
+  ],
+  "qa": {
+    "passed": true,
+    "error_count": 0,
+    "warning_count": 0,
+    "errors": [],
+    "warnings": []
+  }
+}

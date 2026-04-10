@@ -1,0 +1,48 @@
+{
+  "log": [
+    {
+      "time": "11:31:20",
+      "stage": "data_merge",
+      "result": "company=밸류업파트너스, project=수출지원 공고 추천 정확도 향상을 위..."
+    },
+    {
+      "time": "11:31:20",
+      "stage": "WriterAgent",
+      "result": "filled=0[], skipped=6['problem', 'solution', 'market_status', 'bm_intro', 'differentiator', 'expected_effect']"
+    },
+    {
+      "time": "11:31:20",
+      "stage": "TableAgent",
+      "result": "processed=['budget', 'schedule', 'team', 'hire_plan'], warnings=0, errors=0"
+    },
+    {
+      "time": "11:31:20",
+      "stage": "AssetAgent",
+      "result": "images_ready=0, warnings=1, errors=0"
+    },
+    {
+      "time": "11:31:20",
+      "stage": "RenderAgent",
+      "result": {
+        "dry_run": true,
+        "output": "output/사업계획서_완성_DRY_RUN.json"
+      }
+    },
+    {
+      "time": "11:31:20",
+      "stage": "QAAgent",
+      "result": "errors=1, warnings=1"
+    }
+  ],
+  "qa": {
+    "passed": false,
+    "error_count": 1,
+    "warning_count": 1,
+    "errors": [
+      "출력 파일이 생성되지 않았습니다: output/사업계획서_완성.docx"
+    ],
+    "warnings": [
+      "[W05] 이미지 파일을 찾을 수 없습니다: assets/service_diagram.png. 삽입이 건너뜁니다."
+    ]
+  }
+}
