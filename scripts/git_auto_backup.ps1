@@ -27,6 +27,7 @@ while ($true) {
             $changeCount = ($status -split "`n" | Where-Object { $_.Trim() -ne "" }).Count
             Write-Log "[BACKUP] $changeCount changed file(s)."
             $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+            if (Test-Path "$epoPath\.git-auto-backup.log") { Remove-Item "$epoPath\.git-auto-backup.log" -Force }
             git stash push -m "auto-backup-stash-$timestamp" --include-untracked 2>$null
             if ($LASTEXITCODE -ne 0) { throw "git stash failed" }
             Write-Log "[STASH] Saved."
@@ -52,3 +53,4 @@ while ($true) {
     } catch { Write-Log "[ERROR] $_" }
     Start-Sleep -Seconds $intervalSeconds
 }
+
