@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /d/marketgate && gh pr merge 33 --squash --auto --delete-branch && echo \\\"MERGED: marketgate #33\\\"\",\"description\":\"marketgate PR #33 squash merge\"}",
+  "error": "Exit code 1\nfailed to run git: error: Your local changes to the following files would be overwritten by checkout:\n\t.gitignore\nPlease commit your changes or stash them before you switch branches.\nAborting",
+  "timestamp": "2026-06-07T13:53:05.069Z",
+  "retry_count": 1
+}
